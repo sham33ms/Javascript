@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>hello</h1>
+    <!-- <h1 id="demo">hello</h1> -->
+    <p id="demo">Hello</p>
+
+
+
+
+    <button onclick="fun()">on</button>
 
     <script src="1.js"></script>
-    <button onclick="window.print()"> Print </button>
+    <!-- <button onclick="window.print( )"> Print </button> -->
 
     <script>
-        document.write("hello");
-        window.alert("Welcome");
+        function fun() {
+            document.getElementById("demo").innerHTML = "<h1>world</h1>";
+            // document.getElementById("demo").innerHTML ="<p>hjedvjh</p>"
+        }
+        // document.write("hello");
+        // window.alert("Welcome");
     </script>
 </body>
+
 </html>
