@@ -21,7 +21,7 @@ const z=10;
 
 
 var add=a+b;
-var a=1;
+var a=10;
 var b=2;
 add =a+b;
 sub =a-b;
@@ -42,3 +42,4 @@ console.log (mod);
 console.log (pow);
 console.log (g);
 console.log (a==b);
+a=100;
