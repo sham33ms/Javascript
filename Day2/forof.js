@@ -4,20 +4,20 @@ for(key of array){
     console.log(key);
     
 }
-const object={
+const objct={
     name:"shameem",
     age:"22",
     place:"ngl"
 }
-for(key of Object.entries(object) ){
+for(key of Object.entries(objct) ){
     console.log(key);
     
 }
-for(key of Object.values(object) ){
+for(key of Object.values(objct) ){
     console.log(key);
     
 }
-for(key of Object.keys(object) ){
+for(key of Object.keys(objct) ){
     console.log(key);
     
 }

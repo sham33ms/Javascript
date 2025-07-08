@@ -34,4 +34,25 @@ switch(score){
         console.log("Error")  
 }
 
+let x="hgh" ;
+if (x) {
+    console.log("Yes");
+} else {
+    console.log("No");
+}
+console.log(x)
+
+let y = 10;
+if (y = 1) {
+    console.log("Zero");
+} else {
+    console.log("Non-Zero");
+}
+let i = 0;
+while (true) {
+    if (i == 3) break;
+    i++;
+}
+console.log(i);
+
 
