@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun()">click</button>
+    <p id="id"></p>
+    <p id="id1"></p>
+    <h1 id="id2"></h1>
+    <input type="text" id="name">
+    <script>
+        function fun(){
+            var nam = document.getElementById("name").value;
+            localStorage.setItem('key',nam);
+            localStorage.setItem('k','21');
+            localStorage.setItem('ke','213');
+            localStorage.removeItem("ke")
+            var ls= localStorage.getItem('key')
+            var la= localStorage.getItem('k')
+            document.getElementById("id").textContent=ls+" : "+la
+            document.getElementById("id1").textContent=la
+            document.getElementById("id2").textContent=localStorage.getItem("key")
+        }
+        
+    </script>
+</body>
+</html>
