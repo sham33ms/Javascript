@@ -10,19 +10,22 @@
     <p id="id"></p>
     <p id="id1"></p>
     <h1 id="id2"></h1>
-    <input type="text" id="name">
+    <input type="text" id="name" placeholder="enter name">
+    <input type="text" id="name1" placeholder="Enter age">
     <script>
         function fun(){
             var nam = document.getElementById("name").value;
+            var name=document.getElementById("name1").value;
             localStorage.setItem('key',nam);
-            localStorage.setItem('k','21');
+            localStorage.setItem('k',name);
             localStorage.setItem('ke','213');
             localStorage.removeItem("ke")
+            var li = localStorage.getItem('ke')
             var ls= localStorage.getItem('key')
             var la= localStorage.getItem('k')
-            document.getElementById("id").textContent=ls+" : "+la
-            document.getElementById("id1").textContent=la
-            document.getElementById("id2").textContent=localStorage.getItem("key")
+            document.getElementById("id").textContent="Name "+ ls;
+            document.getElementById("id1").textContent="Age "+ la;
+            document.getElementById("id2").textContent=li;
         }
         
     </script>
