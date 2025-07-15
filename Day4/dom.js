@@ -77,7 +77,10 @@ form.addEventListener('submit', function (event) {
   handleSubmit(); 
 });
 
-
+function delay( s){
+  setTimeout(handleSubmit()
+,s);
+}
 async function handleSubmit() {
   var name = nameInput.value.trim();
   var email = emailInput.value.trim();
