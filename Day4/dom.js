@@ -36,17 +36,17 @@ form.addEventListener('submit', function (event) {
     message: message
   };
 
-  
+
   feedbacks.push(newFeedback);
 
-  
+
   localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
 
-  
+
   form.reset();
   charCount.textContent = '0';
 
- 
+
   output.textContent = 'Feedback submitted successfully!';
 });
 
@@ -114,3 +114,5 @@ async function handleSubmit() {
     console.log(e);
   }
 }
+
+
